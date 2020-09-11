@@ -2,9 +2,6 @@
 
 import multiprocessing
 import time
-import os
-from multiserver import multiserver
-# from ctypes import c_bool, c_int
 
 class multipy():
 
