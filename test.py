@@ -5,13 +5,17 @@ from multipy import multipy
 import time
 import os
 
+
+mmm = multipy(max_cpu=3)
+
 def test_func(ttt):
     print(str(os.getpid()) + " start")
-    time.sleep(ttt)
+    for i in range(2):
+        time.sleep(ttt)
     print(str(os.getpid()) + " over")
 
 def main():
-    mmm = multipy(max_cpu=3, cb_func=None, show_processbar=False)
+    
     mmm.add_task(test_func,(4,))
     mmm.add_task(test_func,(3.5,))
     mmm.add_task(test_func,(8,))
