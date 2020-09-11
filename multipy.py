@@ -3,7 +3,7 @@
 import multiprocessing
 import time
 
-class multipy():
+class multiPy():
 
     def __init__(self, max_cpu):
         self.__max_cpu = max_cpu

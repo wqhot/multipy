@@ -1,1 +1,1 @@
-from multipy import multipy
+from .multipy import multiPy
